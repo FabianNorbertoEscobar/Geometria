@@ -15,5 +15,8 @@ public class Circulo {
 	public String toString() {
 		return "(" + this.punto.getX() + ", " + this.punto.getY() + ") , R = " + this.radio;	
 	}
-
+	
+	public boolean contiene(Punto P) {
+		return this.punto.distanciaHasta(P) < this.radio;
+	}
 }
